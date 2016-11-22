@@ -1,0 +1,129 @@
+/* sidebar-newsletter */
+
+/* Bloc Newsletter pour la sidebar de gauche */
+.widget_newsletterwidget{
+	background: #f2f2f2;
+	padding: 0;
+	margin: 10px;
+}
+
+.widget_newsletterwidget h3.widget-title{
+	background: #658db5;
+	color: #FFFFFF;
+	font-family: 'LFT Etica Semi Bold', Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 10px 15px;
+	position: relative;
+}
+
+/* Bloc Central Newsletter */
+.widget{
+	padding: 0;
+	width: 35%;
+    line-height: 15px;
+}
+
+.newsletter{
+	background: #f2f2f2;
+	clear: both;
+}
+
+div.newsletter h4.widget-title{
+	background: #658db5;
+	color: #FFFFFF;
+	font-family: 'LFT Etica Semi Bold', Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	margin: 0 -1px;
+	padding: 10px 15px;
+	position: relative;
+}
+
+div.newsletter h4.widget-title span.right{
+	font-size: 1em;
+	color: #555;
+	float: right;
+}
+
+div.newsletter h4.widget-title span.icone-info{	font-style: italic; }
+
+div.newsletter div.widget-block{ 
+	margin: 0 -1px;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: block;
+	height: 159px;
+	z-index: 20;
+}
+
+div.newsletter div.widget-block div.newsletter-gauche{
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	height: 80px;
+	margin: 5px 0;
+	width: 400px;
+	float: left;
+}
+
+div.newsletter div.widget-block div.newsletter-gauche h4.newsletter-description{
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 10px 15px 20px 20px;
+}
+
+div.newsletter div.widget-block div.newsletter-centre{
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+	height: 80px;
+	margin: 5px 0px;
+	width: 230px;
+	float: left;
+	text-align: center;
+}
+
+div.newsletter div.widget-block div.newsletter-centre input.newsletter-firstname, 
+div.newsletter div.widget-block div.newsletter-centre input.newsletter-email{
+	background: #fefefe;
+	border: 1px solid #d1d1d1;
+	color: #555;
+	font-size: 1em;
+	font-weight: bold;
+	outline: medium none;
+	padding: 9px 9px;
+	width: 190px;
+}
+
+div.newsletter div.widget-block div.newsletter-centre .newsletter-checkbox span{
+	color: #FFFFFF;
+	font-size: 11px;
+}
+
+div.newsletter div.widget-block div.newsletter-centre input.newsletter-firstname, 
+div.newsletter div.widget-block div.newsletter-centre input.newsletter-email, 
+div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit{ text-transform: uppercase; }
+
+div.newsletter div.widget-block div.newsletter-bouton{
+	float: left;
+	margin: -15px 20px;
+}
+
+div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit{
+	border: 1px solid #555555;
+    background-color: #658DB5;
+	color: #FEFEFE;
+	display: inline-block;
+	font-weight: bold;
+	margin: 15px 0 20px;
+	padding: 8px;
+	text-decoration: none;
+	border: medium none;
+	font-size: 1.3em;
+	height: 42px;
+	width: 260px;
+    cursor: pointer;
+}
+
+div.newsletter div.widget-block div.newsletter-bouton p{
+	color: #FFFFFF;
+	font-size: 11px;
+	margin-top: -15px !important;
+	text-align: center;
+}

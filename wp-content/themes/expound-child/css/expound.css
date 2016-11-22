@@ -1,0 +1,30 @@
+div#introduction{
+	padding-top: 40px;
+    padding-bottom: 200px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+div.login, div.newsletter{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.newsletter{
+    width: 60%;
+    float: left;
+}
+
+div.login{
+    width: 35%;
+    float: left;
+}
+
+
+/* icons */
+div.aps-each-icon{
+	margin-top: -8px !important;
+	margin-right: 0px !important;
+    	float: right;
+}

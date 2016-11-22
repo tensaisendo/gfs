@@ -1,0 +1,1 @@
+‰3X<?php exit; ?>a:1:{s:7:"content";a:6:{s:14:"_wpas_done_all";a:1:{i:0;s:1:"1";}s:10:"_edit_last";a:1:{i:0;s:1:"1";}s:17:"_wp_page_template";a:1:{i:0;s:7:"default";}s:18:"_yoast_wpseo_title";a:1:{i:0;s:40:"GoFor Seduction - La Boutique des Gamers";}s:10:"_edit_lock";a:1:{i:0;s:12:"1467375749:1";}s:26:"_yoast_wpseo_content_score";a:1:{i:0;s:2:"30";}}}

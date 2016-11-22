@@ -1,0 +1,1 @@
+‰3X<?php exit; ?>a:1:{s:7:"content";a:5:{s:14:"_wpas_done_all";a:1:{i:0;s:1:"1";}s:10:"_edit_last";a:1:{i:0;s:1:"1";}s:17:"_wp_page_template";a:1:{i:0;s:28:"page-templates/page-blog.php";}s:18:"_yoast_wpseo_title";a:1:{i:0;s:39:"GoFor Seduction - Ensemble des articles";}s:10:"_edit_lock";a:1:{i:0;s:12:"1464361540:1";}}}

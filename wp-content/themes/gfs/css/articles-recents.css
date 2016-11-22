@@ -1,0 +1,16 @@
+.gfs-articles-recents{
+    width: 36%;
+    margin-left: 10px;
+}
+
+.recent-articles-title{
+    background: #658db5;
+    color: #FFFFFF;
+    font-family: 'LFT Etica Semi Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    margin-left: -11px;
+    width: 103.4%;
+    padding: 10px 10px;
+    position: relative;
+}

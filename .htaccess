@@ -1,0 +1,361 @@
+###### BEGIN WP_OPTIMIZE_BY_XTRAFFIC_CONFIGS_WP-OPTIMIZE-BY-XTRAFFIC ######
+Options -Indexes
+###### END WP_OPTIMIZE_BY_XTRAFFIC_CONFIGS_WP-OPTIMIZE-BY-XTRAFFIC ######
+###### BEGIN WP_OPTIMIZE_BY_XTRAFFIC_CONFIGS_WP-OPTIMIZE-SPEED-BY-XTRAFFIC ######
+<ifModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html text/xml text/css text/plain text/x-component text/x-js text/richtext text/xsd text/xsl image/svg+xml application/xhtml+xml application/xml image/x-icon application/rdf+xml application/xml+rdf application/rss+xml application/xml+rss application/atom+xml application/xml+atom text/javascript application/javascript application/x-javascript application/json application/x-font-ttf application/x-font-otf font/truetype font/opentype
+	
+	<IfModule mod_headers.c>
+		Header append Vary User-Agent env=!dont-vary
+	</IfModule>
+	
+	<IfModule mod_mime.c>
+		AddOutputFilter DEFLATE js css htm html xml
+	</IfModule>
+	
+</ifModule>
+
+<ifModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 10 seconds"
+	ExpiresByType text/cache-manifest "access plus 0 seconds"
+
+	
+	ExpiresByType text/xml "access plus 0 seconds"
+	ExpiresByType application/xml "access plus 0 seconds"
+	ExpiresByType text/json "access plus 0 seconds"
+	ExpiresByType application/json "access plus 0 seconds"
+
+	
+	ExpiresByType application/rss+xml "access plus 3600 seconds"
+	ExpiresByType application/atom+xml "access plus 3600 seconds"
+
+	
+	ExpiresByType image/x-icon "access plus 31536000 seconds"
+
+	
+	ExpiresByType image/gif "access plus 31536000 seconds"
+	ExpiresByType image/png "access plus 31536000 seconds"
+	ExpiresByType image/jpeg "access plus 31536000 seconds"
+	ExpiresByType image/jpg "access plus 31536000 seconds"
+	ExpiresByType video/ogg "access plus 31536000 seconds"
+	ExpiresByType audio/ogg "access plus 31536000 seconds"
+	ExpiresByType video/mp4 "access plus 31536000 seconds"
+	ExpiresByType video/webm "access plus 31536000 seconds"
+
+	
+	ExpiresByType text/x-component "access plus 31536000 seconds"
+
+	
+	ExpiresByType application/x-font-ttf "access plus 31536000 seconds"
+	ExpiresByType font/opentype "access plus 31536000 seconds"
+	ExpiresByType font/woff2 "access plus 31536000 seconds"
+	ExpiresByType application/x-font-woff "access plus 31536000 seconds"
+	ExpiresByType image/svg+xml "access plus 31536000 seconds"
+	ExpiresByType application/vnd.ms-fontobject "access plus 31536000 seconds"
+
+	
+	ExpiresByType text/css "access plus 31536000 seconds"
+	ExpiresByType application/javascript "access plus 31536000 seconds"
+	ExpiresByType text/javascript "access plus 31536000 seconds"
+	ExpiresByType application/javascript "access plus 31536000 seconds"
+	ExpiresByType application/x-javascript "access plus 31536000 seconds"
+
+	
+	ExpiresByType application/x-shockwave-flash "access plus 31536000 seconds"
+	ExpiresByType application/octet-stream "access plus 31536000 seconds"
+</ifModule>
+
+<ifModule mod_headers.c>
+	<filesMatch "\.(ico|jpe?g|png|gif|swf)$">
+		Header set Cache-Control "public, max-age=31536000, s-maxage=31536000"
+		Header set Pragma "public"
+	</filesMatch>
+	
+	<filesMatch "\.(css|js|ttf|ttc|otf|eot|woff|woff2|font.css|css)$">
+		Header set Cache-Control "public, max-age=31536000, s-maxage=31536000"
+		Header set Pragma "public"
+	</filesMatch>
+	
+	<filesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|xml)$">
+		Header set Access-Control-Allow-Origin "*"
+	</filesMatch>
+
+	Header set X-Powered-By "WP Optimize By xTraffic/5.1.6"
+	Header set Server "WP Optimize By xTraffic/5.1.6"
+</ifModule>
+
+<FilesMatch "\.(jpg|jpeg|gif|png|ico|svg|bmp|pict|tif|tiff|webp|eps|svgz|css|js|ejs|ttf|woff2|woff|eot|otf|wav|ogg|mp3|wma|mid|midi|rm|ram|aac|m4a|pls|mpg|mpeg|avi|wmv|mov|webm|mp4|m4v|ogv|flv|swf|pdf|csv|doc|ppt|docx|xlsx|xls|pptx|ps|class|jar)(\.gz)?(\?.*)?$">
+	<IfModule mod_rewrite.c>
+		RewriteEngine On
+		RewriteCond %{HTTPS} !=on
+		RewriteRule .* - [E=CANONICAL:http://www.goforseduction.com%{REQUEST_URI},NE]
+		RewriteCond %{HTTPS} =on
+		RewriteRule .* - [E=CANONICAL:https://www.goforseduction.com%{REQUEST_URI},NE]
+	</IfModule>
+	<IfModule mod_headers.c>
+		Header set Link "<%{CANONICAL}e>; rel=\"canonical\""
+	</IfModule>
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+AddDefaultCharset UTF-8
+
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{QUERY_STRING} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author|wp\-postpass|wptouch_switch_toggle|wordpress_logged_in|woocommerce_cart_).*$
+RewriteCond %{HTTPS} !on
+RewriteCond %{HTTP_COOKIE} xtrdvscwd=([^;]+) [NC]
+RewriteCond %{DOCUMENT_ROOT}/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-sw_%1.html -f
+RewriteRule ^(.*) "/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-sw_%1.html" [L]
+
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{QUERY_STRING} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(wp-includes|wp-content|wp-admin|\.php).*$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author|wp\-postpass|wptouch_switch_toggle|wordpress_logged_in|woocommerce_cart_).*$
+RewriteCond %{HTTPS} on
+RewriteCond %{HTTP_COOKIE} xtrdvscwd=([^;]+) [NC]
+RewriteCond %{DOCUMENT_ROOT}/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-sw_%1.html -f
+RewriteRule ^(.*) "/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-sw_%1.html" [L]
+
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{QUERY_STRING} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author|wp\-postpass|wptouch_switch_toggle|wordpress_logged_in|woocommerce_cart_).*$
+RewriteCond %{HTTPS} !on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-sw_.html -f
+RewriteRule ^(.*) "/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-sw_.html" [L]
+
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{QUERY_STRING} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author|wp\-postpass|wptouch_switch_toggle|wordpress_logged_in|woocommerce_cart_).*$
+RewriteCond %{HTTPS} on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-https-sw_.html -f
+RewriteRule ^(.*) "/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-https-sw_.html" [L]
+
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{QUERY_STRING} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(wp-includes|wp-content|wp-admin|\.php).*$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author|wp\-postpass|wptouch_switch_toggle|wordpress_logged_in|woocommerce_cart_).*$
+RewriteCond %{HTTPS} !on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index.xml -f
+RewriteRule ^(.*) "/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index.xml" [L]
+
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{QUERY_STRING} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(s\=|submit\=|wp\-admin|wp\-content|wp\-includes|\.php|/cart/|/my\-account/|/checkout/|/addons/|add\-to\-cart\=).*$
+RewriteCond %{REQUEST_URI} !^.*(wp-includes|wp-content|wp-admin|\.php).*$
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author|wp\-postpass|wptouch_switch_toggle|wordpress_logged_in|woocommerce_cart_).*$
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{HTTPS} on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-https.xml -f
+RewriteRule ^(.*) "/wp-content/pep-vn/cache/request-uri/data/%{SERVER_NAME}/$1/index-https.xml" [L]
+
+</IfModule>
+###### END WP_OPTIMIZE_BY_XTRAFFIC_CONFIGS_WP-OPTIMIZE-SPEED-BY-XTRAFFIC ######
+# BEGIN W3TC Browser Cache
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType text/x-component .htc
+    AddType application/x-javascript .js
+    AddType application/javascript .js2
+    AddType text/javascript .js3
+    AddType text/x-js .js4
+    AddType text/html .html .htm
+    AddType text/richtext .rtf .rtx
+    AddType image/svg+xml .svg .svgz
+    AddType text/plain .txt
+    AddType text/xsd .xsd
+    AddType text/xsl .xsl
+    AddType text/xml .xml
+    AddType video/asf .asf .asx .wax .wmv .wmx
+    AddType video/avi .avi
+    AddType image/bmp .bmp
+    AddType application/java .class
+    AddType video/divx .divx
+    AddType application/msword .doc .docx
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-msdownload .exe
+    AddType image/gif .gif
+    AddType application/x-gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType application/json .json
+    AddType application/vnd.ms-access .mdb
+    AddType audio/midi .mid .midi
+    AddType video/quicktime .mov .qt
+    AddType audio/mpeg .mp3 .m4a
+    AddType video/mp4 .mp4 .m4v
+    AddType video/mpeg .mpeg .mpg .mpe
+    AddType application/vnd.ms-project .mpp
+    AddType application/x-font-otf .otf
+    AddType application/vnd.ms-opentype .otf
+    AddType application/vnd.oasis.opendocument.database .odb
+    AddType application/vnd.oasis.opendocument.chart .odc
+    AddType application/vnd.oasis.opendocument.formula .odf
+    AddType application/vnd.oasis.opendocument.graphics .odg
+    AddType application/vnd.oasis.opendocument.presentation .odp
+    AddType application/vnd.oasis.opendocument.spreadsheet .ods
+    AddType application/vnd.oasis.opendocument.text .odt
+    AddType audio/ogg .ogg
+    AddType application/pdf .pdf
+    AddType image/png .png
+    AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+    AddType audio/x-realaudio .ra .ram
+    AddType application/x-shockwave-flash .swf
+    AddType application/x-tar .tar
+    AddType image/tiff .tif .tiff
+    AddType application/x-font-ttf .ttf .ttc
+    AddType application/vnd.ms-opentype .ttf .ttc
+    AddType audio/wav .wav
+    AddType audio/wma .wma
+    AddType application/vnd.ms-write .wri
+    AddType application/font-woff .woff
+    AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+    AddType application/zip .zip
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css A31536000
+    ExpiresByType text/x-component A31536000
+    ExpiresByType application/x-javascript A31536000
+    ExpiresByType application/javascript A31536000
+    ExpiresByType text/javascript A31536000
+    ExpiresByType text/x-js A31536000
+    ExpiresByType text/html A7200
+    ExpiresByType text/richtext A7200
+    ExpiresByType image/svg+xml A7200
+    ExpiresByType text/plain A7200
+    ExpiresByType text/xsd A7200
+    ExpiresByType text/xsl A7200
+    ExpiresByType text/xml A7200
+    ExpiresByType video/asf A31536000
+    ExpiresByType video/avi A31536000
+    ExpiresByType image/bmp A31536000
+    ExpiresByType application/java A31536000
+    ExpiresByType video/divx A31536000
+    ExpiresByType application/msword A31536000
+    ExpiresByType application/vnd.ms-fontobject A31536000
+    ExpiresByType application/x-msdownload A31536000
+    ExpiresByType image/gif A31536000
+    ExpiresByType application/x-gzip A31536000
+    ExpiresByType image/x-icon A31536000
+    ExpiresByType image/jpeg A31536000
+    ExpiresByType application/json A31536000
+    ExpiresByType application/vnd.ms-access A31536000
+    ExpiresByType audio/midi A31536000
+    ExpiresByType video/quicktime A31536000
+    ExpiresByType audio/mpeg A31536000
+    ExpiresByType video/mp4 A31536000
+    ExpiresByType video/mpeg A31536000
+    ExpiresByType application/vnd.ms-project A31536000
+    ExpiresByType application/x-font-otf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType application/vnd.oasis.opendocument.database A31536000
+    ExpiresByType application/vnd.oasis.opendocument.chart A31536000
+    ExpiresByType application/vnd.oasis.opendocument.formula A31536000
+    ExpiresByType application/vnd.oasis.opendocument.graphics A31536000
+    ExpiresByType application/vnd.oasis.opendocument.presentation A31536000
+    ExpiresByType application/vnd.oasis.opendocument.spreadsheet A31536000
+    ExpiresByType application/vnd.oasis.opendocument.text A31536000
+    ExpiresByType audio/ogg A31536000
+    ExpiresByType application/pdf A31536000
+    ExpiresByType image/png A31536000
+    ExpiresByType application/vnd.ms-powerpoint A31536000
+    ExpiresByType audio/x-realaudio A31536000
+    ExpiresByType image/svg+xml A31536000
+    ExpiresByType application/x-shockwave-flash A31536000
+    ExpiresByType application/x-tar A31536000
+    ExpiresByType image/tiff A31536000
+    ExpiresByType application/x-font-ttf A31536000
+    ExpiresByType application/vnd.ms-opentype A31536000
+    ExpiresByType audio/wav A31536000
+    ExpiresByType audio/wma A31536000
+    ExpiresByType application/vnd.ms-write A31536000
+    ExpiresByType application/font-woff A31536000
+    ExpiresByType application/vnd.ms-excel A31536000
+    ExpiresByType application/zip A31536000
+</IfModule>
+<IfModule mod_deflate.c>
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+        AddOutputFilterByType DEFLATE text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/json
+    <IfModule mod_mime.c>
+        # DEFLATE by extension
+        AddOutputFilter DEFLATE js css htm html xml
+    </IfModule>
+</IfModule>
+<FilesMatch "\.(css|htc|less|js|js2|js3|js4|CSS|HTC|LESS|JS|JS2|JS3|JS4)$">
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+         Header set X-Powered-By "W3 Total Cache/0.9.4.1"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml|HTML|HTM|RTF|RTX|SVG|SVGZ|TXT|XSD|XSL|XML)$">
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+         Header set X-Powered-By "W3 Total Cache/0.9.4.1"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|jpg|jpeg|jpe|json|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|tif|tiff|ttf|ttc|wav|wma|wri|woff|xla|xls|xlsx|xlt|xlw|zip|ASF|ASX|WAX|WMV|WMX|AVI|BMP|CLASS|DIVX|DOC|DOCX|EOT|EXE|GIF|GZ|GZIP|ICO|JPG|JPEG|JPE|JSON|MDB|MID|MIDI|MOV|QT|MP3|M4A|MP4|M4V|MPEG|MPG|MPE|MPP|OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|PNG|POT|PPS|PPT|PPTX|RA|RAM|SVG|SVGZ|SWF|TAR|TIF|TIFF|TTF|TTC|WAV|WMA|WRI|WOFF|XLA|XLS|XLSX|XLT|XLW|ZIP)$">
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+         Header set X-Powered-By "W3 Total Cache/0.9.4.1"
+    </IfModule>
+</FilesMatch>
+# END W3TC Browser Cache
+# BEGIN W3TC Page Cache core
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{HTTP_USER_AGENT} (acer\ s100|android|archos5|bada|bb10|blackberry9500|blackberry9530|blackberry9550|blackberry\ 9800|cupcake|docomo\ ht\-03a|dream|froyo|googlebot-mobile|htc\ hero|htc\ magic|htc_dream|htc_magic|iemobile/7.0|incognito|ipad|iphone|ipod|kindle|lg\-gw620|liquid\ build|maemo|mot\-mb200|mot\-mb300|nexus\ 7|nexus\ one|opera\ mini|s8000|samsung\-s8000|series60.*webkit|series60/5\.0|sonyericssone10|sonyericssonu20|sonyericssonx10|t\-mobile\ mytouch\ 3g|t\-mobile\ opal|tattoo|touch|webmate|webos) [NC]
+    RewriteRule .* - [E=W3TC_UA:_high]
+    RewriteCond %{HTTPS} =on
+    RewriteRule .* - [E=W3TC_SSL:_ssl]
+    RewriteCond %{SERVER_PORT} =443
+    RewriteRule .* - [E=W3TC_SSL:_ssl]
+    RewriteCond %{HTTP:Accept-Encoding} gzip
+    RewriteRule .* - [E=W3TC_ENC:_gzip]
+    RewriteCond %{HTTP_COOKIE} w3tc_preview [NC]
+    RewriteRule .* - [E=W3TC_PREVIEW:_preview]
+    RewriteCond %{REQUEST_METHOD} !=POST
+    RewriteCond %{QUERY_STRING} =""
+    RewriteCond %{REQUEST_URI} \/$
+    RewriteCond %{HTTP_COOKIE} !(comment_author|wp\-postpass|w3tc_logged_out|wordpress_logged_in|wptouch_switch_toggle) [NC]
+    RewriteCond "%{DOCUMENT_ROOT}/wp-content/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_UA}%{ENV:W3TC_SSL}%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" -f
+    RewriteRule .* "/wp-content/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_UA}%{ENV:W3TC_SSL}%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" [L]
+</IfModule>
+# END W3TC Page Cache core
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

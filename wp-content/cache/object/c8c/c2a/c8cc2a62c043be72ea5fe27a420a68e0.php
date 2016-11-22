@@ -1,0 +1,11 @@
+�3X<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":25:{s:2:"ID";i:140;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2012-10-30 02:46:00";s:13:"post_date_gmt";s:19:"2012-10-30 01:46:00";s:12:"post_content";s:1323:"<div dir="ltr" style="text-align: left;"><img class="aligncenter wp-image-931 size-large" title="WTF - Miss Bumbum 2012 : les plus beaux culs du Brésil" src="http://www.goforseduction.com/wp-content/uploads/2012/10/miss-bumbum-2012-bresil-culs-1024x577.jpg" alt="WTF - Miss Bumbum 2012 : les plus beaux culs du Brésil" width="700" height="394" /></div>
+<div dir="ltr" style="text-align: left;"><strong>Mercredi 30 novembre sera élu Miss Bumbum 2012 : les plus beaux culs du Brésil. </strong></div>
+<div dir="ltr" style="text-align: left;">15 femmes passeront la grande finale à São Paolo sur Rede TV avec pour seul objectif : être sacrée la plus belle paire de fesses du pays.</div>
+<div dir="ltr" style="text-align: left;"></div>
+<div dir="ltr" style="text-align: left;">Le concours s'est déroulé dans tous le pays, 1 femme par état, ce qui représente 27 candidates en tout.</div>
+<div dir="ltr" style="text-align: left;">Je te laisse profiter avec une vidéo du concours !</div>
+<div dir="ltr" style="text-align: left;"></div>
+<div dir="ltr" style="text-align: left;"></div>
+<div dir="ltr" style="text-align: left;">
+<div style="text-align: center;"><iframe src="//www.youtube.com/embed/GyvVF5M4NrM" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+</div>";s:10:"post_title";s:49:"Miss Bumbum 2012 : les plus beaux culs du Brésil";s:12:"post_excerpt";s:0:"";s:11:"post_status";s:7:"publish";s:14:"comment_status";s:4:"open";s:11:"ping_status";s:4:"open";s:13:"post_password";s:0:"";s:9:"post_name";s:46:"miss-bumbum-2012-les-plus-beaux-culs-du-bresil";s:7:"to_ping";s:0:"";s:6:"pinged";s:0:"";s:13:"post_modified";s:19:"2016-10-30 03:38:08";s:17:"post_modified_gmt";s:19:"2016-10-30 02:38:08";s:21:"post_content_filtered";s:0:"";s:11:"post_parent";i:0;s:4:"guid";s:77:"http://www.goforseduction.com/miss-bumbum-2012-les-plus-beaux-culs-du-bresil/";s:10:"menu_order";i:0;s:9:"post_type";s:4:"post";s:14:"post_mime_type";s:0:"";s:13:"comment_count";s:1:"0";s:24:"member_access_visibility";s:7:"default";s:6:"filter";s:3:"raw";}}

@@ -1,0 +1,235 @@
+/* 1920x1080 PC Grand écran */
+
+/* 320x480 : Mobile portrait */
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    header#masthead a.home-link { background-size: 173px 93px; }
+    div.menu-menu-principal-container { display: none; }
+
+    header#masthead div#menu{ position: relative; top: -165px; left: 226px; }
+    body{ font-size: 9px; }
+    #site-navigation ul li.menu-item{ margin-right: -17px; }
+    header#masthead div#menu-social{ position: relative; top: -164px; left: 264px; }
+    header#masthead div#menu-social span{ vertical-align: top; margin: 0; padding: 0; }
+
+    button.menu-toggle{ display: inherit; }
+    #navbar{ margin-left: -53px; } 
+    #site-navigation ul li ul.sub-menu, #site-navigation ul li.sfhover ul { position: static; }
+    #site-navigation ul li a { line-height: 1.1; }
+
+    #main{ margin-left: 0; }
+    .widget{ width: 100%; line-height: 15px; }
+    div.newsletter div.widget-block div.newsletter-gauche h4.newsletter-description { font-size: 14px; }
+    div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit{ width: 205px; margin: 10px 0 14px; }
+    div.newsletter div.widget-block div.newsletter-bouton p { line-height: 1; margin-top: -10px !important; }
+
+    .gfs-articles-recents{ width: 100%; margin-left: 0; }
+    #articles-recents li { width: 100px; height: 237px; margin: 5px -8px -72px 0px; }
+    .capty-wrapper{ width: 150px;  }
+    div.newsletter div.widget-block { height: 260px; }
+    div.newsletter div.widget-block div.newsletter-gauche { width: 100%; }
+    div.newsletter div.widget-block div.newsletter-centre { width: 100%; margin: -22px 0px; }
+    div.newsletter div.widget-block div.newsletter-centre input.newsletter-firstname, div.newsletter div.widget-block div.newsletter-centre input.newsletter-email
+    { width: 260px; }
+    div.newsletter div.widget-block div.newsletter-centre div.newsletter-checkbox { width: 90%; padding-left: 37px; }
+    div.newsletter div.widget-block div.newsletter-bouton { margin-top: 100px; }²
+
+    .texte_accueil{ width: 100%; }
+    div.capty-caption{ height: 70px !important; letter-spacing: 2px; padding-left: 6px; }
+    .article_thumb img { width: 100px; height: 165px; }
+    .capty-wrapper { width: 93px; height: 165px;}
+    .recent-articles-title { width: 107%; }
+
+    /* blog */
+    .contenu-principal { width: 100%; }
+    /* article */
+    div.contenu-single img, textarea { width: 100%; }
+
+}
+
+/* 480x320 : Mobile landscape */
+
+@media screen and (min-width: 360px) and (max-width: 639px) {
+    header#masthead a.home-link { background-size: 173px 93px; }
+    div.menu-menu-principal-container { display: none; }
+
+    header#masthead div#menu{ position: relative; top: -165px; left: 226px; }
+    body{ font-size: 9px; }
+    #site-navigation ul li.menu-item{ margin-right: -17px; }
+    header#masthead div#menu-social{ position: relative; top: -164px; left: 264px; }
+    header#masthead div#menu-social span{ vertical-align: top; margin: 0; padding: 0; }
+
+    button.menu-toggle{ display: inherit; }
+    #navbar{ margin-left: -53px; } 
+    #site-navigation ul li ul.sub-menu, #site-navigation ul li.sfhover ul { position: static; }
+    #site-navigation ul li a { line-height: 1.1; }
+
+    #main{ margin-left: 0; }
+    .widget{ width: 100%; line-height: 15px; }
+    div.newsletter div.widget-block div.newsletter-gauche h4.newsletter-description { font-size: 14px; }
+    div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit{ width: 205px; margin: 10px 0 14px; }
+    div.newsletter div.widget-block div.newsletter-bouton p { line-height: 1; margin-top: -10px !important; }
+
+    .gfs-articles-recents{ width: 100%; margin-left: 0; }
+    #articles-recents li { width: 185px; height: 237px; margin: 5px 12px -72px 55px; }
+    .capty-wrapper{ width: 150px;  }
+    div.newsletter div.widget-block { height: 260px; }
+    div.newsletter div.widget-block div.newsletter-gauche { width: 100%; }
+    div.newsletter div.widget-block div.newsletter-centre { width: 340px; margin: -22px 0px; }
+    div.newsletter div.widget-block div.newsletter-centre input.newsletter-firstname, div.newsletter div.widget-block div.newsletter-centre input.newsletter-email
+    { width: 260px; }
+    div.newsletter div.widget-block div.newsletter-centre div.newsletter-checkbox { width: 97%; }
+    div.newsletter div.widget-block div.newsletter-bouton { margin-top: 100px; }
+
+    .texte_accueil{ width: 100%; }
+    div.capty-caption{ height: 70px !important; letter-spacing: 2px; padding-left: 6px; }
+    .article_thumb img { width: 100px; height: 165px; }
+    .capty-wrapper { width: 93px; height: 165px;}
+    .recent-articles-title { width: 107%; }
+
+    /* blog */
+    .contenu-principal { width: 100%; }
+    /* article */
+    div.contenu-single img, textarea { width: 100%; }
+
+
+}
+
+/* max-width pour faibles résolutions */
+@media screen and (max-width: 640px) {
+    #menu a, .navbar a { display:block; }
+    #menu li, .navbar li { float: none; width: 100%; }
+    #main, #menu, .navbar { clear: both; width: 100%; }
+}
+
+/* 768x1024 : Tablet portrait */
+
+/* 800x600 : Small tablet landscape */
+@media screen and (min-width: 800px) and (max-width: 979px) {
+    header#masthead a.home-link{ background-size: 235px 150px; width: 236px; }
+    header#masthead div#menu{ position: relative; top: -165px; left: 226px; }
+    body{ font-size: 9px; }
+    #site-navigation ul li.menu-item{ margin-right: -17px; }
+    header#masthead div#menu-social{ position: relative; top: -164px; left: 264px; }
+    header#masthead div#menu-social span{ vertical-align: top; margin: 0; padding: 0; }
+
+    #main{ margin-left: 0; }
+    .widget{ width: 100%; line-height: 15px; }
+    div.newsletter div.widget-block div.newsletter-gauche h4.newsletter-description { font-size: 14px; }
+    div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit{ width: 205px; margin: 10px 0 14px; }
+    div.newsletter div.widget-block div.newsletter-bouton{ margin-top: 0px; }
+    div.newsletter div.widget-block div.newsletter-bouton p { line-height: 1; margin-top: -10px !important; }
+
+    .gfs-articles-recents{ width: 100%; margin-left: 0; }
+    .recent-articles-title{ width: 103%; }
+    .article_thumb img{ width: 150px; height: 165px; }
+    #articles-recents li { width: 185px; height: 237px; margin: 5px 12px -72px 55px; }
+    .capty-wrapper{ width: 150px; height: 165px; }
+    div.newsletter div.widget-block { height: 180px; }
+    div.newsletter div.widget-block div.newsletter-gauche { width: 430px; }
+    div.newsletter div.widget-block div.newsletter-centre { width: 340px; }
+    div.newsletter div.widget-block div.newsletter-centre input.newsletter-firstname, div.newsletter div.widget-block div.newsletter-centre input.newsletter-email
+    { width: 260px; }
+
+    .texte_accueil{ width: 100%; }
+    div.capty-caption{ height: 70px !important; letter-spacing: 2px; padding-left: 6px; }
+
+    /* blog */
+    .contenu-principal { width: 100%; }
+}
+
+/* 600x800 : Small tablet portrait */
+
+@media screen and (min-width: 980px) and (max-width: 1023px) {
+    .texte_accueil { width: 99.3%; }
+    .widget { width: 47%; }
+    .gfs-articles-recents { width: 52%; margin-left: 3px; }
+    #articles-recents { margin: 0px 0px 0px -10px; }
+    #articles-recents li { width: 150px; height: 237px; margin: 5px 0px -72px 6px; }
+
+    header#masthead a.home-link{ background-size: 274px 150px; width: 285px; }
+    header#masthead div#menu{ position: relative; top: -170px; left: 275px; }
+    #site-navigation ul li.menu-item{ margin-right: -16px; }
+    header#masthead div#menu-social{ position: relative; top: -175px; left: 285px; }
+    body{ font-size: 12px; }
+    header#masthead div#menu-social span{ vertical-align: top; }
+
+    .recent-articles-title { width: 104.8%; }
+    .gfs-articles-recents{ width: 51.9%; }
+    .article_thumb img{ width: 150px; height: 165px; }
+    .capty-wrapper{ width: 165px; height: 165px; }
+    div.newsletter div.widget-block { height: 180px; }
+    div.newsletter div.widget-block div.newsletter-gauche { width: 230px; }
+    div.capty-caption { padding-left: 3px; width: 150px; }
+
+    div.newsletter div.widget-block div.newsletter-gauche h4.newsletter-description {margin: 10px 5px 20px 20px; }
+    div.newsletter div.widget-block div.newsletter-centre { margin: -81px 215px; width: 215px; }
+    div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit { margin: 0px 0px 15px; width: 180px; }
+    div.newsletter div.widget-block div.newsletter-bouton p { font-size: 9px; }
+    div.newsletter div.widget-block div.newsletter-gauche { margin: 5px -15px; }
+    div.newsletter div.widget-block div.newsletter-gauche h4.newsletter-description { font-size: 14px; }
+    div.newsletter div.widget-block div.newsletter-bouton { margin: 0px 20px; }
+
+    /* blog */
+    .contenu-principal { width: 100%; }
+}
+
+/* 1024x768 : tablet landscape */ /* min-width pour moyennes résolutions */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    header#masthead a.home-link{ background-size: 315px 150px; width: 315px; }
+    header#masthead div#menu{ position: relative; top: -165px; left: 314px; }
+    body{ font-size: 12px; }
+    #site-navigation ul li.menu-item{ margin-right: -16px; }
+    header#masthead div#menu-social{ position: relative; top: -164px; left: 321px; }
+    header#masthead div#menu-social span{ vertical-align: top; }
+
+    #main{ margin-left: 0; }
+    .widget{ width: 48%; line-height: 15px; }
+    div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit{ width: 190px; }
+    div.newsletter div.widget-block div.newsletter-bouton{ margin-top: -25px; }
+
+    .gfs-articles-recents{ width: 50%; }
+    .recent-articles-title{ width: 104.6%; }
+    .article_thumb img{ width: 165px; height: 165px; }
+    #articles-recents li { width: 161px; height: 237px; }
+    .capty-wrapper{ width: 165px; height: 165px; }
+    div.newsletter div.widget-block { height: 180px; }
+    div.newsletter div.widget-block div.newsletter-gauche { width: 230px; }
+
+    .texte_accueil{ width: 99%; }
+    div.capty-caption{ height: 70px !important; letter-spacing: 2px; padding-left: 6px; }
+
+    #main, .navbar { width:100%; clear:none; }
+
+    /* blog */
+    .contenu-principal { width: 100%; }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+    header#masthead a.home-link{ background-size: 315px 150px; width: 315px; }
+    header#masthead div#menu{ position: relative; top: -98px; left: -5px; }
+    body{ font-size: 12px; }
+    #site-navigation ul li.menu-item{ margin-right: -16px; }
+    header#masthead div#menu-social{ position: relative; top: -107px; left: 325px; }
+    header#masthead div#menu-social span{ vertical-align: top; }
+
+    #main{ margin-left: 0; }
+    .widget{ width: 48%; line-height: 15px; }
+    div.newsletter div.widget-block div.newsletter-bouton input.newsletter-submit{ width: 190px; }
+    div.newsletter div.widget-block div.newsletter-bouton{ margin-top: -25px; }
+
+    .gfs-articles-recents{ width: 50%; }
+    .recent-articles-title{ width: 104.6%; }
+    .article_thumb img{ width: 165px; height: 165px; }
+    #articles-recents li { width: 150px; height: 237px; margin-right: 23px; margin-left: 27px; }
+    .capty-wrapper{ width: 165px; height: 165px; }
+    div.newsletter div.widget-block { height: 180px; }
+    div.newsletter div.widget-block div.newsletter-gauche { width: 335px; }
+
+    .texte_accueil{ width: 99%; }
+    div.capty-caption{ height: 70px !important; letter-spacing: 2px; padding-left: 23px; left: -17px; width: 197px; }
+
+    #main, .navbar { width:100%; clear:none; }
+
+    /* blog */
+    .contenu-principal { width: 100%; }
+}

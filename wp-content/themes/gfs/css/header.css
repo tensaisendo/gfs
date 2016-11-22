@@ -1,0 +1,203 @@
+/********************************* header du site *********************************/
+header#masthead, footer#colophon {
+    z-index: 999;
+    height: 170px;
+    background-color: #FBFCFA;
+    -webkit-box-shadow: 0 0 10px -2px black;
+    -moz-box-shadow: 0 0 10px -2px black;
+    box-shadow: 0 0 10px -2px black;
+}
+
+header#masthead {
+	width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px 20px 0 20px;
+}
+
+header#masthead a.home-link {
+	background-image: url(../img/logo-sexy-diabolo-girl.png);
+	background-repeat: no-repeat;
+	background-size: 450px 150px;
+	height: 161px;
+	width: 460px;
+}
+
+header#masthead a.home-link,header #menu {
+	display: inline-block;
+}
+
+/********************************* menu header *********************************/
+#menu {
+	position: relative;
+	top: -89px;
+}
+
+/********************************* menu barre de navigation *********************************/
+
+#navbar {
+	text-transform: uppercase;
+	/*font-size: 20px;
+	font-weight: bold;*/
+}
+
+#site-navigation ul {
+	list-style: none;
+	padding: 0;
+	line-height: 0;
+	border-top: 1px solid #ededed; /* gris tr�s clair */
+	border-bottom: 1px solid #ededed; /* gris tr�s clair */
+}
+
+#site-navigation ul li.menu-item {
+	display: inline-block;
+	background: linear-gradient(#E9EBEB, #EAEBEC);
+    margin-right: -5px;
+}
+
+#site-navigation ul li a {
+	display: block;
+	padding: 15px;
+	background: #FBFCFA;
+	-moz-transition: background 0.5s;
+	-webkit-transition: background 0.5s;
+	-ms-transition: background 0.5s;
+	-o-transition: background 0.5s;
+	line-height: 0.692307692;
+	color: #636363; /* Gris fonc� mat */
+}
+
+.main-navigation .current-menu-item>a,.main-navigation .current-menu-ancestor>a,.main-navigation .current_page_item>a,.main-navigation .current_page_ancestor>a
+	{
+	font-weight: bold;
+}
+
+#site-navigation ul li a:hover {
+	background: transparent;
+	-moz-transition: background 0s;
+	-webkit-transition: background 0s;
+	-ms-transition: background 0s;
+	-o-transition: background 0s;
+}
+
+#site-navigation ul li ul.sub-menu li.menu-item {
+	display: block;
+	margin-left: 0;
+}
+
+#site-navigation ul li ul.sub-menu,#site-navigation ul li.sfhover ul {
+	display: none;
+	position: absolute;
+	border: 1px solid #ededed; /* gris tr�s clair */
+	z-index: 1;
+}
+
+#site-navigation ul li:hover ul,#site-navigation ul li.sfhover ul {
+	display: table;
+	margin-right: -20px;
+}
+
+header .nav-menu {
+    display: inline-block;
+}
+
+.nav-menu ul li {
+    display: inline-block;
+}
+
+button.menu-toggle{ display: none; }
+
+/********************************* barre de recherche *********************************/
+#menu-social span {
+	position: relative;
+	margin-left: 5px;
+}
+
+header form input.search-field {
+	margin-bottom: 0;
+	background-color: transparent;
+	background-image: url(../img/search-icon.png);
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	border: none;
+	cursor: pointer;
+	height: 37px;
+	margin: 3px 0;
+	padding: 0 0 0 34px;
+	position: relative;
+	-webkit-transition: width 400ms ease, background 400ms ease;
+	transition: width 400ms ease, background 400ms ease;
+	width: 0;
+}
+
+.search-form .search-submit {
+	display: none;
+}
+
+/********************************* barre sociale *********************************/
+.menu-social{ position: relative; top: -95px; left: 465px; }
+
+header#masthead ul.socialbar {
+	width: 410px;
+}
+
+.socialbar li {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background: url(../img/sprite-reseaux-sociaux.png) no-repeat;
+}
+
+.socialbar .socialbar-facebook {
+	background-position: left top;
+}
+
+.socialbar .socialbar-twitter {
+	background-position: 82% top;
+}
+
+.socialbar .socialbar-googleplus {
+	background-position: 102% top;
+}
+
+.socialbar .socialbar-youtube {
+	background-position: 62% top;
+}
+
+.socialbar .socialbar-dailymotion {
+	background-position: 40.8% top;
+}
+
+.socialbar .socialbar-rss {
+	background-position: 20% top;
+}
+
+.socialbar .socialbar-facebook:hover {
+	background-position: left bottom;
+}
+
+.socialbar .socialbar-twitter:hover {
+	background-position: 82% bottom;
+}
+
+.socialbar .socialbar-googleplus:hover {
+	background-position: 102% bottom;
+}
+
+.socialbar .socialbar-youtube:hover {
+	background-position: 62% bottom;
+}
+
+.socialbar .socialbar-dailymotion:hover {
+	background-position: 40.8% bottom;
+}
+
+.socialbar .socialbar-rss:hover {
+	background-position: 20% bottom;
+}
+
+/********************************* menu (social + recherche) **********************************/
+#menu-social ul.socialbar,#menu-social span {
+	display: inline-block;
+}

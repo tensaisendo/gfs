@@ -1,0 +1,29 @@
+/*
+Theme Name: gfs
+Theme URI: http://www.goforseduction.com/
+Description: Thème pour gfs
+Author: Ichi Goushi
+Author URI: http://www.gmail.com/ichi.goushi
+Template: gfs
+Version: 0.1.0
+*/
+a {
+	text-decoration: none;
+}
+
+body {
+	font-family: expresswayregular, Arial, "sans-serif";
+	margin: 0;
+	background-color: #eaebec; /* blanc cassé */
+}
+
+div#page {
+	width: 100%;
+	/*margin: auto;*/
+}
+
+/* main */
+.site-main {
+	padding-top: 194px;
+	color: #3b3a3c;
+}

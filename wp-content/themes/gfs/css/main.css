@@ -1,0 +1,113 @@
+#main {
+	margin: 0;
+	/*background-image: url(../img/logo-silhouette-02.jpg);
+	background-position: left bottom;
+	background-size: 960px 960px;
+	background-repeat: no-repeat;
+	position: fixed;*/
+	margin-left: 20px;
+}
+
+.clear{
+	display: block;
+	clear: both;
+}
+
+table {	color: #666; }
+
+h1,h1 a,a.suite,a {	color: #1a4f91; } /* bleu marine */
+h1 a:hover,a:hover.suite { color: #0078a5; } /* bleu marine cyan */
+div #content h2 { color: #00609b; }
+h3 { color: #006da0; }
+h4 { color: #006bb2; }
+h5 { color: #006eb6; }
+h6 { color: #3578ab; }
+
+.cadre {
+	border: #ccc 1px solid; /* gris clair */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0 1px 2px #6a6b6d; /* gris fonc� */
+	-webkit-box-shadow: 0 1px 2px #6a6b6d;
+	box-shadow: 0 1px 2px #6a6b6d;
+	margin-bottom: 5px;
+}
+
+.cadre-article {
+	background: #FBFCFA; /* blanc de lait */
+	padding: 10px;
+}
+
+.contenu-principal {
+	display: inline-block;
+	float: left;
+	width: 71.6%;
+	padding-top: 0;
+    font-family: expresswayregular;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.contenu-sidebar {
+	display: inline-block;
+	width: 20%;
+	margin-left: 15px;
+	padding-top: 0;
+}
+
+p#spacer {
+	clear: both;
+	height: 1px;
+}
+
+ul { list-style-type: none; }
+
+.left { float: left; }
+.right { float: right; }
+
+/* Texte de la page accueil */
+
+.texte_accueil h2{
+    letter-spacing: .10em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.texte_accueil_intro {
+    line-height: 24px;
+    font-family: expresswayregular;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.texte_accueil_intro strong {
+    font-style: italic;
+    background: transparent;
+    background: -webkit-linear-gradient(-45deg, #61c2ff 0%, #cd4444 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: brandon-grotesque, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.texte_accueil_intro strong span { text-transform: uppercase; }
+
+.texte_accueil_intro_obj { max-width: 925px; margin: 0; }
+
+.tiret {
+    border: 1px solid #00609b;
+    width: 250px;
+    margin-left: 30%;
+}
+
+.bold, b{ font-weight: bold; }
+
+
+

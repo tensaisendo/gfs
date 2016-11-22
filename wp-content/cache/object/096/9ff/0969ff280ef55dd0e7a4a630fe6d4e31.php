@@ -1,0 +1,1 @@
+‰3X<?php exit; ?>a:1:{s:7:"content";s:195:"a:2:{s:27:"redirection/redirection.php";a:2:{i:0;s:17:"Redirection_Admin";i:1;s:16:"plugin_uninstall";}s:45:"ewww-image-optimizer/ewww-image-optimizer.php";s:30:"ewww_image_optimizer_uninstall";}";}

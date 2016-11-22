@@ -1,0 +1,91 @@
+/* template coaching */
+.cadre-coaching {
+	background: #DCDCDC; /* gris clair */
+}
+
+/* type de bullet pour les listes */
+.list-bullet-check {
+	list-style-type: none;
+	background-image: url(../img/list-bullet-check.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 35px;
+}
+
+/* liste des techniques */
+table.liste_techniques {
+	line-height: 30px;
+}
+
+table.liste_techniques td {
+	padding-right: 20px;
+}
+
+/* tableau de formation */
+table.tableau tr {
+	text-align: center;
+}
+
+table.tableau th:first-child {
+	text-align: left;
+}
+
+table.tableau th {
+	padding: 11px 15px 12px 15px;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 14pt;
+	background: #ededed;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed),
+		to(#ebebeb));
+	background: -moz-linear-gradient(top, #ededed, #ebebeb);
+}
+
+table.tableau td {
+	padding: 13px;
+	border-bottom: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb),
+		to(#fafafa));
+	background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+table.tableau td.oui {
+	background-image: url(../img/yes.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fafafa;
+}
+
+table.tableau td.oui-horaire {
+	background-image: url(../img/yes.png);
+	background-repeat: no-repeat;
+	background-position: 35%;
+	background-color: #fafafa;
+}
+
+table.tableau td.non {
+	background-image: url(../img/no.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fafafa;
+}
+
+/* bouton de reservation */
+.bouton_click a {
+	background: #D66113;
+	border-color: #D66113;
+}
+
+.bouton_click a:visited {
+	color: white;
+}
+
+.bouton_click a:link {
+	font-size: 15pt;
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	text-shadow: 1px 1px #002100;
+	text-decoration: none;
+	border-radius: 5px;
+}

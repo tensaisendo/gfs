@@ -1,0 +1,19 @@
+/* footer */
+.cadre-footer {
+    margin-left: 20px;
+    text-align: center;
+}
+
+footer ul li {
+    float: left;
+    margin: 0 15px 10px 0;
+    padding-right: 15px;
+    text-transform: uppercase;
+    border-right: 1px solid #333;
+}
+
+footer ul li a { color: #636363; }
+
+footer span {
+    margin-right: 540px;
+}

@@ -1,0 +1,6 @@
+‰3X<?php exit; ?>a:6:{s:10:"last_error";s:0:"";s:10:"last_query";s:176:"
+					SELECT term_taxonomy_id
+					FROM wp_gfs_term_taxonomy
+					WHERE taxonomy = 'category'
+					AND term_id IN (429,436,455,456,458,459,460,457,436,454,455,453,454,460)
+				";s:11:"last_result";a:10:{i:0;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"429";}i:1;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"436";}i:2;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"453";}i:3;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"454";}i:4;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"455";}i:5;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"456";}i:6;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"457";}i:7;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"458";}i:8;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"459";}i:9;O:8:"stdClass":1:{s:16:"term_taxonomy_id";s:3:"460";}}s:8:"col_info";a:1:{i:0;O:8:"stdClass":13:{s:4:"name";s:16:"term_taxonomy_id";s:5:"table";s:20:"wp_gfs_term_taxonomy";s:3:"def";s:0:"";s:10:"max_length";i:3;s:8:"not_null";i:1;s:11:"primary_key";i:1;s:12:"multiple_key";i:0;s:10:"unique_key";i:0;s:7:"numeric";i:1;s:4:"blob";i:0;s:4:"type";s:3:"int";s:8:"unsigned";i:1;s:8:"zerofill";i:0;}}s:8:"num_rows";i:10;s:10:"return_val";i:10;}

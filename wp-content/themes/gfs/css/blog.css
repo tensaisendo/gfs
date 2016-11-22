@@ -1,0 +1,54 @@
+/*blog*/
+.contenu-blog,.contenu-single { padding-top: 0px; } /* pour blog et single uniquement */
+
+.excerpt {
+	padding-bottom: 70px;
+	border-bottom: 1px solid #ededed;
+}
+
+/* fil d'ariane (breadscrumb) */
+.ariane {
+	position: relative;
+	top: -16px;
+}
+
+/* ligne date publication, auteur, coms */
+div.byline {
+	height: 30px;
+	margin-left: -39px;
+}
+
+.blog .byline,.single .byline { margin-top: -10px; } /* pour blog et single uniquement */
+
+ul.bylineBar { display: inline-block; }
+
+.bylineBar li {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background: url(../img/icones_all.png) no-repeat;
+	margin-right: 130px;
+}
+
+.bylineBar li span {
+	padding-left: 29px;
+	width: 151px;
+	display: inline-block;
+	font-size: 11px;
+	position: relative;
+	top: 2px;
+}
+
+.bylineBar .byline-date { background-position: 0.86% 85.5%; }
+.bylineBar .byline-auteur { background-position: 82.6% 76.9%; }
+.bylineBar .byline-coms { background-position: 55.34% 59.5%; }
+
+/* texte et image */
+div.excerpt_img_txt { padding-top: 0px; }
+div.excerpt_img_txt img { float: left; }
+div.excerpt_img_txt p { margin-top: -17px; padding-left: 160px;}
+div.excerpt_img_txt a { padding-left: 10px; }
+
+
+/* pagination */
+div .pagination { text-align: center; }
